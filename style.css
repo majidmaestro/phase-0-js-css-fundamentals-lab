@@ -1,4 +1,4 @@
-nav {
+.navbar {
   background-color: #333;
   font-size: 1.2em;
   padding: 1em;
@@ -8,35 +8,34 @@ nav {
   top: 0;
   z-index: 1000;
 }
-nav ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-nav ul li {
+.navbar ul li {
   display: inline;
   margin: 0 1em;
 }
-nav ul li a {
+.navbar ul li a {
   color: #fff;
 }
-main {
+.main-content {
   padding-top: 5em;
 }
-section {
+.main-content section {
   padding: 2em 1em;
   text-align: center;
 }
-.main-content {
+#home h1 {
   font-size: 2.5em;
   margin-bottom: 1.5em;
-  /* paragraph-font-size: 1.2em; */
-  /* paragraph-color: #666; */
 }
-p-main-content {
+#home p {
   font-size: 1.2em;
   color: #666;
 }
+
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
@@ -51,15 +50,13 @@ p-main-content {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 30%;
   box-sizing: border-box;
-  transition: transform 0.3s ease;
-}
-.portfolio-item:hover {
-  transform: scale(1.05);
+  transition: transform 0.3s;
 }
 .portfolio-item h3 {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
+
 .portfolio-item p {
   color: #666;
   margin-bottom: 0.5em;
@@ -67,6 +64,9 @@ p-main-content {
 .portfolio-item img {
   width: 100%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.portfolio-item:hover {
+  transform: scale(1.05);
 }
 footer {
   background-color: #222;
